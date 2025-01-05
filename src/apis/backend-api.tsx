@@ -5,6 +5,7 @@ export const getScheduledLessons = async () => {
     method: "GET",
     headers: {
       Accept: "application/json",
+      Origin: window.location.origin,
     },
   });
 
@@ -17,6 +18,7 @@ export const getRandomPuzzlesByTheme = async (theme: string) => {
     method: "GET",
     headers: {
       Accept: "application/json",
+      Origin: window.location.origin,
     },
   });
 
